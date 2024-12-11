@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.canvas-wrapper {
+  position: relative;
+  width: 270px;
+  height: 480px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-input {
+  min-width: 80px;
+  width: auto;
+  height: auto;
+  text-align: left;
+  position: absolute;
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  word-wrap: break-word;
+  padding: 5px;
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  max-width: 270px;
+  overflow-wrap: break-word;
+}
+
+.text-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls select,
+.controls input[type="color"],
+.controls input[type="number"],
+button {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}

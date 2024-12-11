@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas with Font Options</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="canvas-wrapper">
+      <canvas id="canvas1" width="270" height="480"></canvas>
+      <canvas id="canvas2" width="270" height="480" style="display: none;"></canvas>
+      <canvas id="canvas3" width="270" height="480" style="display: none;"></canvas>
+    </div>
+
+    <div class="controls">
+      <button id="addText">Add New Text</button>
+      <label for="fontFamily">Font:</label>
+      <select id="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+      <label for="fontSize">Size:</label>
+      <input id="fontSize" type="number" value="16" min="8" max="72">
+      <label for="fontColor">Color:</label>
+      <input id="fontColor" type="color" value="#000000">
+    </div>
+
+    <div>
+      <button id="prev">← Previous</button>
+      <button id="next">Next →</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
